@@ -1,25 +1,40 @@
 body {
-    margin:50px 0px; padding:0px;
-    font-family: 'Open Sans', 'Titillium Web',  sans-serif;
-    height: 100%;
+    font-family: 'Open Sans', 'Titillium Web', sans-serif;
+    list-style-type: none;
+    list-style-type: none;
 }
+
 #main {
     color: #cccccc;
-    text-align:center;
+    text-align: center;
     font-size: 2em;
-    margin-bottom: 40px;
-    margin-top: 40px;
     line-height: 1.1em;
 }
 
+@media (min-width: 1200px) {
+    #main {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+}
+
+section {
+    padding: 0.4em;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0px; margin-left: 0px;
+}
 
 #info {
-    text-align:left;
-   font-size: 1.1em;
+    text-align: left;
+    font-size: 1.1em;
     line-height: 180%;
 }
 
-#info .p1 { font-size: 110%;
+#info .p1 {
+    font-size: 110%;
     font-weight: bold;
     color: #999999;
 }

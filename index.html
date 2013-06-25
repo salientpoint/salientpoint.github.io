@@ -15,6 +15,7 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 </head>
 <body>
+
 <div class="row-fluid">
     <div class="span6 offset3">
 
@@ -32,9 +33,8 @@
     <div class="span6 offset3">
         <section>
             <div id="info">
-                <p class="p1">SalientPoint is a Stockholm-based group of highly experienced Internet Contractors focusing on leading and
-                    Agile
-                    development teams, Technical Project Management, Software Architecture and Development on the web in the Enterprise or in the Cloud.
+                <p class="p1">SalientPoint is a Stockholm-based group of highly experienced Internet Contractors focusing on
+                    Agile Software Development, Technical Project Management and Software Architecture on the web in the Enterprise or in the Cloud.
                 </p>
                 <p>
                     We always strive to maximize the future value of the systems we're building by
@@ -54,7 +54,7 @@
 <div class="row-fluid" id="boxrow">
 
     <div class="span2 offset3 well">
-        <h4>We like working on</h4>
+        <h4>We work on</h4>
         <ul>
             <li>Internet / Mobile</li>
             <li>Back-end systems</li>
@@ -98,13 +98,19 @@
 
 
 <script>
-    $(document).ready(function () {
+    function boxFix() {
         boxes = $('.well');
         maxHeight = Math.max.apply(
                 Math, boxes.map(function () {
                     return $(this).height();
                 }).get());
         boxes.height(maxHeight);
+    }
+    $(document).ready(function () {
+        boxFix();
+    })
+    $(window).resize(function () {
+        boxFix();
     })
 </script>
 
