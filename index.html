@@ -1,1 +1,114 @@
-<h1>salientpoint.com</h1>
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SalientPoint. Future Proof, Cost Effective.</title>
+    <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,300' rel='stylesheet' type='text/css'>
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+</head>
+<body>
+<div class="row-fluid">
+    <div class="span6 offset3">
+
+        <section>
+            <div id="main">
+                <p>Cloud, Agile development, and Open Source</p>
+
+                <div id="logocontainer"><img src="logo70x.gif"></div>
+                <p>Future Proof, Cost Effective.</p>
+            </div>
+        </section>
+    </div>
+</div>
+<div class="row-fluid ">
+    <div class="span6 offset3">
+        <section>
+            <div id="info">
+                <p class="p1">SalientPoint is a group of highly experienced Internet Contractors focusing on leading and
+                    Agile
+                    development teams, Technical Project Management, Software Architecture and Development. We help our
+                    customers make effective use of technology, to implement and manage internal and customer-facing
+                    internet
+                    software.
+                </p>
+                <p>
+                    We always strive to maximize the future value of the systems we're building by
+                    identifying, assessing and judiciously incorporating the latest tech, thus minimizing the risk of leaving our clients
+                    in a technical cul-de-sac or without the benefits of a new technology trend.
+                </p>
+                <p>
+                    We supplement existing resources within a company as well as take overall responsibility for the
+                    project, including planning, management, implementation QA deployment and training, tapping into our
+                    own
+                    network as needed.
+                </p>
+            </div>
+        </section>
+    </div>
+</div>
+<div class="row-fluid" id="boxrow">
+
+    <div class="span2 offset3 well">
+        <h4>We like working on</h4>
+        <ul>
+            <li>Internet / Mobile</li>
+            <li>Back-end systems</li>
+            <li>Web client development</li>
+            <li>Big Data, Search, Integration</li>
+            <li>Cloud Computing (IaaS, PaaS, BaaS)</li>
+        </ul>
+    </div>
+
+    <div class="span2  well">
+        <h4>We use</h4>
+        <ul>
+            <li>Java</li>
+            <li>Node.js & Friends</li>
+            <li>CloudFoundry, Heroku, Amazon Web Services</li>
+            <li>Modern web client technology</li>
+            <li>New black & shiny things</li>
+        </ul>
+    </div>
+
+    <div class="span2  well">
+        <h4>We offer</h4>
+        <ul>
+            <li>Agile Leadership</li>
+            <li>Coaching and Mentoring</li>
+            <li>Programming</li>
+            <li>Concept Development</li>
+            <li>Other stuff our customers need</li>
+        </ul>
+    </div>
+
+</div>
+
+
+<div class="row-fluid">
+    <div class="span12" id="footer">
+        SalientPoint AB | Artillerigatan 25, S-11445 Stockholm | &#105;&#110;&#102;&#111;&#64;&#115;&#97;&#108;&#105;&#101;&#110;&#116;&#112;&#111;&#105;&#110;&#116;&#46;&#99;&#111;&#109; | +46 8 559 22 438
+    </div>
+</div>
+
+
+
+<script>
+    $(document).ready(function () {
+        boxes = $('.well');
+        maxHeight = Math.max.apply(
+                Math, boxes.map(function () {
+                    return $(this).height();
+                }).get());
+        boxes.height(maxHeight);
+    })
+</script>
+
+</body>
