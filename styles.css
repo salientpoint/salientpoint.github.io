@@ -1,7 +1,6 @@
 body {
     font-family: 'Open Sans', 'Titillium Web', sans-serif;
     list-style-type: none;
-    list-style-type: none;
 }
 
 #main {
@@ -11,13 +10,12 @@ body {
     line-height: 1.1em;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 768px) { /* Adjusted breakpoint */
     #main {
         margin-top: 40px;
         margin-bottom: 40px;
     }
     ul {
-
         list-style-type: circle;
     }
 }
@@ -28,13 +26,14 @@ section {
 
 ul {
     list-style-type: none;
-    padding-left: 0px; margin-left: 0px;
+    padding-left: 0px;
+    margin-left: 0px;
 }
 
 #info {
     text-align: left;
     font-size: 1.1em;
-    line-height: 180%;
+    line-height: 1.8; /* More descriptive value */
 }
 
 #info .p1 {
@@ -43,15 +42,10 @@ ul {
     color: #999999;
 }
 
-#logocontainer {
-    margin-bottom: 30px;
-    margin-top: 30px;
-}
-
-.infobox {
-    border: 1px;
-    background-color: lightblue;
-}
+/* .infobox {  Removed if unused */
+/*     border: 1px solid lightblue;  Added missing unit */
+/*     background-color: lightblue; */
+/* } */
 
 #boxrow {
     margin-top: 20px;
@@ -63,5 +57,23 @@ ul {
 }
 
 #footer {
+    text-align: center;
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+#logocontainer {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 70px;
+    height: 70px;
+    margin: 0 auto;
+}
+
+.p1, .p2 {
     text-align: center;
 }
